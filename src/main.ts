@@ -11,6 +11,9 @@ async function bootstrap() {
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
+  app.enableCors({
+    origin: ['http://localhost:3000/', 'https://ga01.netlify.app/'],
+  });
   await app.listen(5000);
 }
 bootstrap();
