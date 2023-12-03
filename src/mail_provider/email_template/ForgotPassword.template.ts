@@ -113,7 +113,7 @@ export function createForgotPasswordTemplate(
                       line-height: 20px; /* 142.857% */"> We have received a reset password request. Please use the code below to reset your password </p>
                   </div>
                   <div style="text-align: center; margin-top:10px; margin-bottom:30px" >
-                      <button style="
+                      <div style="
                       text-decoration: none; 
                       backface-visibility: hidden;
                       background-color: #405cf5;
@@ -138,7 +138,7 @@ export function createForgotPasswordTemplate(
                       font-style: normal;
                       font-weight: 700;
              
-                     >Your verification code: ${verificationCode}</button>
+                     >Your verification code:<span style="font-weight: bold;  font-size: larger;"> ${verificationCode}</span></div>
                   </div>
                   <div class="template-body3" style="margin-top: 10px; margin-bottom: 10px;">
                       <div style="                        color: var(--light-secondary, #7F7F7F);

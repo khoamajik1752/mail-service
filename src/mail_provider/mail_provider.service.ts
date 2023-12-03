@@ -23,7 +23,7 @@ export class MailProviderService {
     );
     const msg = {
       to: `${email}`, // Change to your recipient
-      from: 'khoanguyen517@gmail.com', // Change to your verified sender
+      from: _config.SENDER_ACCOUNT, // Change to your verified sender
       subject: 'Email confirmation',
       text: 'testing mail',
       html: template,
@@ -42,7 +42,7 @@ export class MailProviderService {
     const template = createForgotPasswordTemplate(email, verificationCode);
     const msg = {
       to: `${email}`, // Change to your recipient
-      from: 'khoanguyen517@gmail.com', // Change to your verified sender
+      from: _config.SENDER_ACCOUNT, // Change to your verified sender
       subject: 'Fit Classroom - Reset your password',
       text: 'testing mail',
       html: template,
